@@ -35,7 +35,6 @@ jobs:
       - name: testes
         run: npm run test
         env:
-
-        REDIS_HOST: localhost
-        REDIS_PORT: 6379
-        DATABASE_PASSWORD: ${{ secrets.DB_PASSWORD_PROD }}
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          DATABASE_PASSWORD: ${{ secrets.DB_PASSWORD_PROD }}
